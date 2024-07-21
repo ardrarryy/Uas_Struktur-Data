@@ -32,10 +32,10 @@ public:
         cout << "| No  |" << setw(30) << center("Judul", 30) 
              << "|" << setw(20) << center("Penulis", 20) 
              << "|" << setw(14) << center("Status", 14) 
-             << " |" << endl;
+             << "|" << endl;
         cout << "+-----+------------------------------+--------------------+---------------+" << endl;
         for (const auto &b : buku) {
-            cout << "| " << setw(3) << center(to_string(b.id), 3) 
+            cout << " | " << setw(3) << center(to_string(b.id), 3) 
                  << " | " << setw(28) << center(b.judul, 28) 
                  << " | " << setw(18) << center(b.penulis, 18) 
                  << " | " << setw(13) << center(b.dipinjam ? "Dipinjam" : "Tersedia", 13) 
